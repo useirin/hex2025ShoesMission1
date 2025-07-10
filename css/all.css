@@ -146,9 +146,10 @@ table {
   --font-size-h3: 28px;
   --font-size-h4: 24px;
   --font-size-h5: 20px;
+  --font-size-psm: 14px;
   --line-height-heading: 1.2;
   --line-height-p: 1.5;
-  --letter-spacing: 0.05em;
+  --letter-spacing: 0.05rem;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
   --radius-sm: 4px;
@@ -156,10 +157,6 @@ table {
   --radius-rounded: 1000px;
 }
 
-/* debug 用
-* {
-    outline: 1px solid blue;
-} */
 /* 全域設定 */
 *,
 *::before,
@@ -182,22 +179,23 @@ img {
 
 a {
   display: inline-block;
-  text-decoration: none;
-  color: var(--color-neutral-900);
+  color: var(--color-primary-400);
 }
 
 /* 容器 */
-.container {
-  max-width: 1320px;
+.container-856 {
+  max-width: 880px;
   margin: 0 auto;
   padding-left: 12px;
   padding-right: 12px;
 }
 
-/* 推擠 */
-.mb-80 {
-  margin-bottom: 80px;
+.container-1076 {
+  max-width: 1076px;
+  margin: 0 auto;
 }
+
+/* 推擠 */
 .mb-64 {
   margin-bottom: 64px;
 }
@@ -217,19 +215,84 @@ a {
   margin-bottom: 4px;
 }
 
-.pb-48 {
-  padding-bottom: 48px;
+/* 通用設定 */
+.text-on-dark {
+  color: var(--color-neutral-white);
 }
 
-.pd-32 {
-  padding: 32px;
+.heading {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
 }
-.pd-y64 {
+
+.footer {
   padding-top: 64px;
   padding-bottom: 64px;
+  background: var(--color-neutral-100);
+}
+.footer p {
+  text-align: center;
+  color: var(--color-neutral-600);
+  font-size: var(--font-size-psm);
 }
 
-/* 通用設定 */
-.bg-footer {
-  background: var(--color-neutral-100);
+.story-header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.story-title {
+  text-align: center;
+  padding-top: 151px;
+  padding-bottom: 151px;
+  font-size: var(--font-size-h1);
+}
+.story-title-eng {
+  font-size: var(--font-size-h3);
+}
+
+.intro {
+  background: var(--color-primary-100);
+  text-align: center;
+  padding: 32px;
+}
+.intro h3 {
+  color: var(--color-primary-400);
+  font-size: var(--font-size-h5);
+}
+
+.story-article h2 {
+  font-size: var(--font-size-h4);
+}
+.story-article section {
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--color-neutral-300);
+}
+
+.highlight {
+  color: var(--color-primary-400);
+  font-size: var(--font-size-h5);
+}
+
+.list-disc {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+.list-disc span {
+  border-left: 1px solid var(--color-neutral-900);
+  padding-left: 8px;
+  margin-left: 8px;
+}
+.list-line li {
+  border-left: 3px solid var(--color-neutral-300);
+  padding-left: 12px;
+}
+.list-arrow i {
+  color: var(--color-primary-400);
+}
+.list-arrow a {
+  font-weight: var(--font-weight-medium);
+  text-underline-offset: 8px;
+  margin-left: 8px;
 }
