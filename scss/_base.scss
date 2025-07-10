@@ -69,6 +69,12 @@ a {
     }
 }
 
+.pb {
+    &-48 {
+        padding-bottom: 48px;
+    }
+}
+
 .pd {
     &-32 {
         padding: 32px;
@@ -78,4 +84,10 @@ a {
         padding-top: 64px;
         padding-bottom: 64px;
     }
+}
+
+/* 通用設定 */
+
+.bg-footer {
+    background: var(--color-neutral-100);
 }

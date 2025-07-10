@@ -138,6 +138,7 @@ table {
   --color-primary-100: #F5FEE7;
   --color-primary-400: #57A203;
   --color-neutral-white: #FFFFFF;
+  --color-neutral-100: #F8F9FA;
   --color-neutral-300: #DEE2E6;
   --color-neutral-600: #6C757D;
   --color-neutral-900: #212529;
@@ -147,7 +148,7 @@ table {
   --font-size-h5: 20px;
   --line-height-heading: 1.2;
   --line-height-p: 1.5;
-  --letter-spacing: 5em;
+  --letter-spacing: 0.05em;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
   --radius-sm: 4px;
@@ -216,10 +217,19 @@ a {
   margin-bottom: 4px;
 }
 
+.pb-48 {
+  padding-bottom: 48px;
+}
+
 .pd-32 {
   padding: 32px;
 }
 .pd-y64 {
   padding-top: 64px;
   padding-bottom: 64px;
+}
+
+/* 通用設定 */
+.bg-footer {
+  background: var(--color-neutral-100);
 }
